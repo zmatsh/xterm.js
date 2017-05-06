@@ -299,6 +299,7 @@ Terminal.prototype.getState = function() {
   ];
 
   let state = {
+    buffer: this.lines._array,
     cursor: this._getCursor(),
     geometry: this.geometry,
     mode: this._getMode(),
